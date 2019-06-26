@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Coiny', cursive;
+    background: #f1f2f6a6;
+}
+.menutren ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 29.9px 10px;
+    color: #fff;
+    font-family: tahoma;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.menutren ul li a:hover{
+    background: #5B4A3E;
+    color: #fff!important;
+}
+.menutren {
+    width: 98%;
+    height: 79px;
+    background: #5B4A3E;
+    margin: auto;
+    position: relative;
+    top: 0;
+    z-index: 5;
+    transition: 1s;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.menutren ul li {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+.menutren:hover{
+    background: transparent;  
+}
+.menutren:hover ul li a {
+    color:  #5B4A3E;
+}
+#thehome{
+    color: #fff;
+    background: #5B4A3E;
+}
+/* End menu*/
+span.logo_1 {
+    padding: 10px 50px;
+}
+.logo_1 img {
+    width: 160px;
+    padding: 10px 50px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: 2s;
+}
+.logo_2 img {
+    width: 160px;
+    padding: 10px 50px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: 2s;
+}
+.menutren:hover  .logo_1 img{
+    opacity: 0;
+}
+.menutren:hover  .logo_2 img{
+    opacity: 1;
+}
+/*end logo*/
+/**************END MENUTREN********/
+
+#slider{
+    width: 98%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    margin: auto;
+}
+@-webkit-keyframes slidea{
+    from{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+} 
+.slide{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    animation: slidea 10s forwards;
+    overflow: hidden;
+    transition: 3s;
+}
+#prev{
+    text-transform:uppercase;
+    top: 50%;
+    margin-top: -50px;
+    left: 2%;
+    position:absolute;
+    color: aliceblue;
+    font-size: 75px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#prev:hover{
+    color:#5B4A3E;
+}
+#next{
+    text-transform:uppercase;
+    top: 50%;
+    margin-top: -50px;
+    right: 16px;
+    position:absolute;
+    color: #e8e5e5bd;
+    font-size: 75px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#next:hover{
+    color:#5B4A3E;
+}
+.btn.slide {
+    width: 400px;
+    height: 50px;
+    background:  palegoldenrod;
+    color: #5B4A3E;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+    outline: none;
+    font-family: 'Coiny', cursive;
+}
+.nutslide {
+    width: 325px;
+    background: #eee8aabd;
+    color: #5B4A3E;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+    outline: none;
+    font-family: 'Coiny', cursive;
+    cursor: pointer;
+    padding: 3px;
+}
+/******************END SLIDE************************/
+
+.khoichu{
+    width: 600px;
+    text-align: center;
+    background: #33333394;
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    padding: 10px;
+    height: 235px;
+    border-radius: 15px;
+}
+.khoihienthi {
+    width: 326px;
+    height: 218px;
+    background: transparent;
+    position: absolute;
+    top: 75%;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.chu1{
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.chu2{
+    font-size: 22px;
+    margin: 20px 0px;
+}
+.khoichung {
+    width: 79%;
+    height: 700px;
+    background: url(img/anhpgt.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.btn.nutdautien {
+    width: 400px;
+    height: 50px;
+    background:  palegoldenrod;
+    color: #5B4A3E;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+    outline: none;
+    font-family: 'Coiny', cursive;
+}
+.khoithongtinslide{
+    height: 90px;
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(150px);
+    opacity: 0;
+    position: absolute;
+    top: 60px;
+    background: #5B4A3E;
+    padding: 10px;
+    left: 0;
+    z-index: 0;
+    border: 3px solid #5B4A3E;
+}
+.upforslide{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/***********END ARENA SLIDE**************/
+.anhgiuatrang {
+    width: 550px;
+    height: auto;
+    margin: auto;
+}
+
+.anhgiuatrang img {
+    width: 550px;
+}
+/*end anhgiuatrang*/
+
+.khoichung {
+    width: 98%;
+    height: 800px;
+    background: url(img/anhpgt.jpg);
+    overflow: hidden;
+    background-size: contain;
+    margin: 10px auto;
+    background-position-x: 30px;
+    cursor: pointer;
+}
+/*end khoichung*/
+.tatcakhoi {
+    background: transparent;
+    width: 1230px;
+    height: 800px;
+    margin: auto;
+}
+/*end tatcakhoi*/
+.khoi1{
+    width: 400px;
+    height: 350px;
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: 2s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.khoi1:nth-child(1n){
+    margin-left: 0px;
+}
+.khoi1:nth-child(3n){
+    margin-right: 0;
+}
+/*end khoi1*/
+.btn.nutdautien {
+    width: 400px;
+    height: 50px;
+    background:  palegoldenrod;
+    color: #5B4A3E;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+    outline: none;
+    font-family: 'Coiny', cursive;
+    cursor: pointer;
+}
+.khoi2{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    transition: 2s;
+}
+#nut0{
+    width: 306px;
+    left: 160px;
+}
+.khoilen0{
+    transition: 2s;
+    width: 300px;
+    height: 120px;
+    cursor: pointer;
+    transform: translateY(150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    z-index: 0;
+    background: #5B4A3E;
+    border: 3px solid #5B4A3E;
+}
+.dilen0{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.info{
+    font-size: 20px;
+    color: #f3eeec;
+    font-family: Tah;
+}
+.note{
+    font-size: 15px;
+    font-family: Tah;
+    color: #f3eeec;
+    position: absolute;
+    bottom: 10px;
+}
+.khoitrai1{
+    transition: 2s;
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transform: translateX(-150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    border: 3px solid #5B4A3E;
+}
+.sangtrai1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+/*end khoitrai1*/
+.khoilen1{
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transition: 2s;
+    transform: translateY(150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    border: 3px solid #5B4A3E;
+}
+.dilen1{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/*end khoilen1*/
+.khoiphai1{
+    transition: 2s;
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transform: translateX(150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    border: 3px solid #5B4A3E;
+}
+.sangphai1{
+    opacity: 1;
+    transform: translateX(0px);
+}
+/*end khoiphai1*/
+.khoitrai2{
+    transition: 2s;
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transform: translateX(-150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+}
+.sangtrai2{
+    opacity: 1;
+    transform: translateX(0px);
+}
+/*end khoitrai2*/
+.khoilen2{
+    transition: 2s;
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transform: translateY(150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+}
+.dilen2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/*end khoilen2*/
+.khoiphai2{
+    transition: 2s;
+    width: 394px;
+    height: 280px;
+    cursor: pointer;
+    transform: translateX(150px);
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+    border: 3px solid #5B4A3E;
+}
+.sangphai2{
+    opacity: 1;
+    transform: translateX(0px);
+}
+/*end khoiphai2*/
+.khoitin .anhz{
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    opacity: 1;
+    transition: 2s;
+}
+.khoitin:hover .anhz{
+    opacity: 0;
+}
+.khoitin:hover .layer{
+    opacity: 1;
+}
+/*end khoitin*/
+.layer{
+    opacity: 0;
+    background: palegoldenrod;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transition: 2s;
+    z-index: 2;
+    width: 99%;
+    height: 280px;
+    border: 3px solid #5B4A3E;
+}
+.layer .name{
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #5B4A3E;
+    line-height: 40px;
+    padding-left: 5px;
+}
+.layer .name1{
+      text-decoration: none;
+      font-size: 22px;
+      color: #ec6952;
+      text-transform: none;
+      font-style: italic;
+}
+/*end layer*/
+/***********END CHUNG**************/
+footer {
+    width: 98%;
+    height: 360px;
+    margin: -10px auto;
+    background: transparent;
+    font-family: tah;
+}
+/*end footer*/
+.phanxam {
+    background: #696969c2;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 30px 0;
+}
+p.sodt {
+    padding: 20px;
+    font-weight: bold;
+    color:#fff;
+    transition:1s;
+    cursor: pointer;
+    display: inline-block;
+}
+p.sodt:hover{
+    color:#5B4A3E;
+}
+.onlinecall{
+    text-transform: uppercase;
+    background: #5B4A3E;
+    display: inline-block;
+    padding: 2px 21px;
+    border-radius: 25px;
+    margin-left: 50px;
+    color: #fff;
+    transition:1s;
+}
+.onlinecall:hover{
+    background:#fff;
+    color:#5B4A3E;
+}
+/*end phanxam*/
+.phanden {
+    background: #5B4A3E;
+    color: #fff;
+    height: 200px;
+    text-align: center;
+    transition: 1s;
+}
+.phanden:hover{
+    color: #8B8B8B;
+     background: #111111ed;
+}
+.phanden h2:hover{
+    color: #fff;
+}
+h2{
+    padding: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cacchu {
+    display: inline-flex;
+}
+/*end phanden*/
+p.copyright {
+    font-size: 25px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.copyright:hover{
+    color: #fff;
+}
+.cacicon {
+    font-size: 25px;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.cacicon i{
+    margin: 0px 23px;
+}
+.cacicon i:hover{
+    color: #fff; 
+}
+.cacicon .fa{
+    margin: 0 5px;
+}
+/*end cacicon*/
